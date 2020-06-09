@@ -6,16 +6,21 @@ public class SmartShapes {
 	
     public static void main(String[] args) throws Exception {
         // 1. Make a new Robot
-
+Robot jeff= new Robot();
 
         // 3. Put the robot's pen down
 
-
+jeff.penDown();
         // 6. Make the robot move as fast as possible
-
+jeff.setSpeed(9001);
 
         // 5. Use a for loop to repeat everything below 4 times. 
-
+for (int i=0; i<200; i++) {
+	jeff.setRandomPenColor();
+	jeff.setSpeed(90001);
+	jeff.move(100);
+	jeff.turn(89);
+	}
 
         //         2. Move your robot 200 pixels
 
