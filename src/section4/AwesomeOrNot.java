@@ -2,32 +2,61 @@ package section4;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class AwesomeOrNot {
 
 	// 1. Make a main method that includes all the steps below…
 
-	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
+	public static void main(String[] args) {
 
-	// 3. Print out this variable
+		Random rand = new Random();
+		int random = rand.nextInt(4);
 
-	// 4. Get the user to enter something that they think is awesome
+		String HAHA = JOptionPane.showInputDialog("Gimme somthing you think is awesome");
+		String message = "";
 
-	// 5. If the random number is 0
+		if (random == 0) {
+			message = "LAMEEEEEEEEE";
+		}
 
-	// -- tell the user whatever they entered is awesome!
+		if (random == 1) {
+			message = "EWWWWWWWWWWWWWWWW";
+		}
 
-	// 6. If the random number is 1
+		if (random == 2) {
+			message = "UGHHHHHHHHHHHH";
+		}
+		if (random == 3) {
+			message = "GETTTTTT THAT OUT OF HERE";
+		}
+		JOptionPane.showMessageDialog(null, message);
 
-	// -- tell the user whatever they entered is ok.
+		// Random rand = new Random();fe
+		// int random = rand.nextInt(5);
 
-	// 7. If the random number is 2
+		// 2. Make a variable that will hold a random number and put a random number
+		// into this variable using "new Random().nextInt(4)"
+		// new Random(cow).nextInt(4)
+		// 3. Print out this variable
+		// JOptionPane.showMessageDialog(null, );
+		// 4. Get the user to enter something that they think is awesome
 
-	// -- tell the user whatever they entered is boring.
+		// 5. If the random number is 0
 
-	// 8. If the random number is 3
+		// -- tell the user whatever they entered is awesome!
 
-	// -- write your own answer
+		// 6. If the random number is 1
 
+		// -- tell the user whatever they entered is ok.
+
+		// 7. If the random number is 2
+
+		// -- tell the user whatever they entered is boring.
+
+		// 8. If the random number is 3
+
+		// -- write your own answer
+
+	}
 }
-
-
